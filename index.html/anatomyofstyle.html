@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnatomyofStyle - Get Styled</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+        .hero {
+            background: url('assets/fashion.jpg') no-repeat center center/cover;
+            height: 500px;
+            text-align: center;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero h1 {
+            font-size: 48px;
+        }
+        .request-form {
+            background-color: #fff;
+            padding: 20px;
+            max-width: 500px;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .request-form input, .request-form select, .request-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .request-form button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>AnatomyofStyle - Get Styled</h1>
+</header>
+
+<section class="hero">
+    <h1>Style Your Perfect Look</h1>
+</section>
+
+<section>
+    <div class="request-form">
+        <h2>Request a Styling Session</h2>
+        <form action="https://formspree.io/f/your-form-id" method="POST" enctype="multipart/form-data">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="phone" placeholder="Your Phone Number" required>
+            <label for="service">Choose a Service:</label>
+            <select name="service" id="service" required>
+                <option value="vacation">Vacation Outfit Planning</option>
+                <option value="everyday">Everyday Styling</option>
+                <option value="event">Event Styling</option>
+            </select>
+            <textarea name="preferences" placeholder="Style Preferences (colors, budget, etc.)"></textarea>
+            <label for="file">Upload Wardrobe Photos (Optional):</label>
+            <input type="file" name="file" id="file">
+            <input type="date" name="date" placeholder="Date Needed By" required>
+            <button type="submit">Submit Request</button>
+        </form>
+    </div>
+</section>
+
+</body>
+</html>
